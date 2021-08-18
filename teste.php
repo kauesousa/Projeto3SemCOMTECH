@@ -1,0 +1,10 @@
+		<form action="ins.php" enctype="multipart/form-data" method="post">';
+		Nome:<br/>';
+		<input type="text" name="nome_produto"/><br/>';
+		Descrição:<br/>';
+		<input type="text" name="descricao"/><br/>';
+		Sobvre:<br/>';
+		<input type="text" name="sobre"/><br/>';
+		Selecione uma imagem: <input name="arquivo" type="file" /><br/>';
+		<input type="submit"/><br/>';
+		</form>';

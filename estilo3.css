@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #ccc;
+}
+
+.menu{
+	width: 100%;
+	height: 70px;
+	background-color: #000;
+	font-family: Arial;
+	margin-bottom: 40px;
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+	float: right;
+	left: -15%;
+	top: 12%;
+}
+
+.menu ul li{
+	width: 120px;
+	display: inline-block;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+.menu a:hover{
+	background-color: #fff;
+	color: #555;
+}
+
+
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #222;
+	color: #fff;
+	font-family: Arial;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+#bt_menu{
+	display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+img.imgLogo{
+	position: absolute;
+	left: 4%;
+	width: 85px;
+	height: 70px;
+}
+
+.inputPesquisar{
+	position: absolute;
+	left: 10%;
+	top: 3%;
+}
+
+.h2ListarFunc{
+	text-align: center;
+}
+
+@media(max-width: 800px){
+	label[for="bt_menu"]{
+		display: block;
+}
+
+#bt_menu:checked ~ .menu{
+	margin-left: 0;
+	height: auto;
+
+}
+
+.menu{
+	margin-top: 5px;
+	margin-left: -100%;
+	transition: all .4s;
+}
+
+.menu ul{
+	float: none;
+	left: 0;
+	border: none;
+
+}
+
+.menu ul li{
+	width: 100%;
+	float: none;
+	border: none;
+} 
+
+.menu a{
+	text-align: center;
+}
+
+.imgLogo{
+	display: none;
+}
+
+}
+
+
